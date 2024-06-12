@@ -1,0 +1,100 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+:root{
+   --Sy-blue: #428AE0;
+   --Drk-Gray: #272727;
+   --light-back: #F0F3F5;
+
+   --lner-ny-Blue: #061B37;
+   --lner-drk-Blue: #060C14;
+
+   --White: #FFFFFF;
+   --Gray: #B6B6B6;
+
+   --Spicy: "Spicy Rice", serif;
+}
+
+
+body{
+   position: relative;
+   background-color: #aad0ff;
+}
+
+article{
+   max-width: 1440px;
+   height: 100vh;
+   margin: 0 auto;
+}
+
+main{
+   max-width: 500px;
+   height: 100vh;
+   margin: 0 auto;
+   padding-top: 3rem;
+   display: flex;
+   justify-content: center;
+  
+}
+
+.box{
+   width: 400px;
+   height: 450px;
+   background-color: var(--White);
+   border: 7px solid var(--Gray);
+   border-radius: 20px;
+   margin-inline: 1rem;
+   position: relative;
+}
+.love{
+   width: 200px; 
+   margin-bottom: 10px;
+}
+.new-width{
+   width: 250px;  
+}
+.quesImg{
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#question{
+   font-family: var(--Spicy);
+   color: #FE617E;
+   font-size: 2rem;
+   margin-top: 1rem;
+}
+.btns{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+#yes, #no{
+   width: 6rem;
+   height: 2.5rem;
+   background-color: #FE617E;
+   border: none;
+   font-size: 1rem;
+   font-weight: 500;
+   color: var(--White);
+   border-radius: 10px;
+   transition: 100ms;
+   position: absolute;
+}
+#yes:active, #no:active{
+   width: 7rem;
+   height: 3rem;
+}
+#yes{
+   left: 4rem;
+}
+#no{
+   right: 4rem;
+}
